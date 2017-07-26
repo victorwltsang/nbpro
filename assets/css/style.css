@@ -1,52 +1,36 @@
-.row-flex,
-.row-flex > div[class*='col-'] {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 100%;
-          flex: 1 100%;
-}
-
-.container-flex > div[class*='col-'] div,
-.row-flex > div[class*='col-'] div {
-  width: 100%;
-}
-
 .no-gutter-left {
   padding-left: 0;
-  padding-right: 12px;
+  padding-right: 0px;
 }
 
 .no-gutter-right {
   padding-right: 0;
-  padding-left: 12px;
+  padding-left: 0px;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #F5F5F5;
 }
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #F5F5F5;
   position: relative;
+}
+
+.container {
+  width: 80%;
+}
+
+#wrapper {
   min-height: 100%;
 }
 
-html {
-  background-color: #F5F5F5;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
-}
-
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  clear: both;
+  margin-top: -80px;
   width: 100%;
   text-align: center;
   font-size: 12px;
@@ -60,6 +44,12 @@ footer p {
 
 .footer-line {
   border-top: 1px solid rgba(67, 67, 69, 0.33);
+}
+
+.app {
+  overflow: auto;
+  margin-bottom: 5px;
+  padding-bottom: 80px;
 }
 
 .app h1 {
@@ -88,10 +78,6 @@ footer p {
 
 .widget-margin-bottom {
   margin-bottom: 25px;
-}
-
-.widget-margin-right {
-  margin-right: 10px;
 }
 
 .widget-close {
@@ -197,4 +183,34 @@ footer p {
 
 .netbasics img {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 991px) {
+  .widget-margin-right {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 730px) {
+  .row-flex,
+  .row-flex > div[class*='col-'] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 100%;
+            flex: 1 100%;
+  }
+  .container-flex > div[class*='col-'] div,
+  .row-flex > div[class*='col-'] div {
+    width: 100%;
+  }
+  .no-gutter-left {
+    padding-left: 0;
+    padding-right: 12px;
+  }
+  .no-gutter-right {
+    padding-right: 0;
+    padding-left: 12px;
+  }
 }

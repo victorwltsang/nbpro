@@ -1,77 +1,68 @@
-@import './base/mixins';
-// * {
+@import './base/mixins'; // * {
 //   background-color: rgba(0,0,0,.10);
 //   border          : 1px dashed red !important;
 // }
 
-.row-flex,
-.row-flex > div[class*='col-'] {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex: 1 100%;
-}
 
-.container-flex > div[class*='col-'] div,
-.row-flex > div[class*='col-'] div {
-  width: 100%;
-}
 
 .no-gutter {
   &-left {
     padding-left: 0;
-    padding-right: 12px;
+    padding-right: 0px;
   }
 
   &-right {
     padding-right: 0;
-    padding-left: 12px;
+    padding-left: 0px;
   }
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #F5F5F5;
 }
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #F5F5F5;
   position: relative;
+}
+
+
+.container{
+  width:80%;
+}
+
+#wrapper {
   min-height: 100%;
-}
 
-html {
-  background-color: #F5F5F5;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
 }
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  clear: both;
+  margin-top: -80px;
   width: 100%;
   text-align: center;
-  font-size:12px;
-  color:#979797;
+  font-size: 12px;
+  color: #979797;
 }
 
-footer p{
-  padding:30px;
-  margin:0;
+footer p {
+  padding: 30px;
+  margin: 0;
 }
 
-.footer-line{
-
-border-top: 1px solid rgba(67,67,69,0.33);
+.footer-line {
+  border-top: 1px solid rgba(67,67,69,0.33);
 }
 
 .app {
+  // display:none;
+  overflow: auto;
+  margin-bottom: 5px;
+  padding-bottom: 80px;
+
   h1 {
     font-size: 22px;
     font-weight: 600;
@@ -98,10 +89,6 @@ border-top: 1px solid rgba(67,67,69,0.33);
 
   &-margin-bottom {
     margin-bottom: 25px;
-  }
-
-  &-margin-right {
-    margin-right: 10px;
   }
 
   &-close {
@@ -214,4 +201,40 @@ border-top: 1px solid rgba(67,67,69,0.33);
   img {
     margin-right: 10px;
   }
+}
+@media screen and (min-width:991px) {
+  .widget {
+    &-margin-right {
+      margin-right: 10px;
+    }
+  }
+}
+
+@media screen and (min-width:730px) {
+.row-flex,
+.row-flex > div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 100%;
+}
+
+.container-flex > div[class*='col-'] div,
+.row-flex > div[class*='col-'] div {
+  width: 100%;
+}
+
+.no-gutter {
+  &-left {
+    padding-left: 0;
+    padding-right: 12px;
+  }
+
+  &-right {
+    padding-right: 0;
+    padding-left: 12px;
+  }
+}
 }
