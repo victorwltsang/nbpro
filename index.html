@@ -13,6 +13,30 @@
 
   <body>
     <div id="wrapper">
+
+
+      <nav class="navbar navbar-red">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <a href="#"><img class="navbar-brand-image" src="assets/images/NBpro.png" alt="NetBase Pro" /></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+              <li class=""><a href="#"><i class="fa fa-home fa-nav-padding-right" aria-hidden="true"></i>Home</a></li>
+              <li><a href="#"><i class="fa fa-search fa-nav-padding-right" aria-hidden="true"></i>Search</a></li>
+              <li><a href="#"><i class="fa fa-pie-chart fa-nav-padding-right" aria-hidden="true"></i>Compare</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="navbar-profile-dropdown"><img class="navbar-profile-pic" src="assets/images/profile-pic.png" /> <i class="fa fa-caret-down fa-carat-padding-left" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <main class="app">
         <div class="container">
           <div class="row">
@@ -20,7 +44,7 @@
               <div id="search-bar" class="search row widget widget-white-bg widget-margin-bottom widget-margin-right">
 
                 <h1>Quick Search</h1>
-                <a href="#" class="btn widget-btn widget-btn-red">All Social</a>
+                <a href="#" class="btn widget-btn widget-btn-red">All Social<i class="fa fa-caret-down fa-carat-padding-left" aria-hidden="true"></i></a>
                 <form role="search">
                   <div class="input-group">
                     <input class="form-control input-bar" placeholder="Enter keywords, @mentions, #hastags and links" name="search-term" id="search-term" type="text">
@@ -34,20 +58,47 @@
               <div id="saved-search" class="row widget widget-white-bg widget-margin-bottom widget-margin-right">
 
                 <h1>Saved Searches</h1>
-
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Name<i class="fa fa-caret-down fa-carat-padding-left" aria-hidden="true"></i></th>
+                      <th>Last accessed<i class="fa fa-caret-down fa-carat-padding-left" aria-hidden="true"></i></th>
+                      <th>Actions<i class="fa fa-caret-down fa-carat-padding-left" aria-hidden="true"></i></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Coke</td>
+                      <td>July 8, 2017</td>
+                      <td>john@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Mary</td>
+                      <td>Moe</td>
+                      <td>mary@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>July</td>
+                      <td>Dooley</td>
+                      <td>july@example.com</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
 
               <div id="information" class="row row-flex text-center widget-margin-right">
-                <div class="col-md-6 col-sm-12 no-gutter-left">
+                <div class="col-lg-6 col-md-12 no-gutter-left">
                   <div class="widget widget-white-bg widget-margin-bottom">
                     <h1>Getting Started Video</h1>
                     <div class="netbasics">
-                      <img class="" src="assets/images/netbasics.png" />
-                      <a href="#" class="btn widget-btn widget-btn-red">See the Video</a>
+                      <img src="assets/images/netbasics.png" />
+                      <div class="netbasics-link">
+                        <a href="#" class="btn widget-btn widget-btn-red">See the Video</a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-sm-12 no-gutter-right">
+                <div class="col-lg-6 col-md-12 no-gutter-right">
                   <div class="widget widget-white-bg widget-margin-bottom ">
                     <h1>New Features Coming Soon!</h1>
                     <p class="widget-soon-feature-text">Scheduled reports that periodically email you an up-to-date snapshot of a saved search.</p>
@@ -66,7 +117,7 @@
               </div>
 
               <div id="use-cases" class="row widget widget-white-bg widget-margin-bottom">
-                <i class="fa fa-times widget-close" aria-hidden="true"></i>
+
                 <h1>NetBase Pro Use Cases</h1>
 
                 <p> Here are a few examples of the many use cases that NetBase Pro supports:</p>
