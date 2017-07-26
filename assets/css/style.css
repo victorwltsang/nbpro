@@ -13,7 +13,7 @@ html {
   margin-bottom: 25px;
 }
 
-.app p {
+.app p, .app ul {
   font-size: 13px;
   color: #777777;
 }
