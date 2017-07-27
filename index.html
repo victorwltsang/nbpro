@@ -32,7 +32,13 @@
               <li><a href="#"><i class="fa fa-pie-chart fa-nav-padding-right" aria-hidden="true"></i>Compare</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" class="navbar-profile-dropdown"><img class="navbar-profile-pic" src="assets/images/profile-pic.png" /> <i class="fa fa-caret-down fa-carat-padding-left" aria-hidden="true"></i></a></li>
+              <li><a href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" class="navbar-profile-dropdown"><img class="navbar-profile-pic" src="assets/images/profile-pic.png" /> <i class="fa fa-caret-down fa-carat-padding-left" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><i class="fa fa-user fa-nav-padding-right" aria-hidden="true"></i>My Profile</a></li>
+                  <li><a href="#"><i class="fa fa-cog fa-nav-padding-right" aria-hidden="true"></i>Settings</a></li>
+                  <li><a href="#"><i class="fa fa-power-off fa-nav-padding-right" aria-hidden="true"></i>Logout</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -134,7 +140,31 @@
                 <div class="col-lg-6 col-md-12 no-gutter-right">
                   <div class="widget widget-white-bg widget-margin-bottom ">
                     <h1>New Features Coming Soon!</h1>
-                    <p class="widget-soon-feature-text">Scheduled reports that periodically email you an up-to-date snapshot of a saved search.</p>
+                    <div id="incomingCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#incomingCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#incomingCarousel" data-slide-to="1"></li>
+                        <li data-target="#incomingCarousel" data-slide-to="2"></li>
+                      </ol>
+
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <p>Scheduled reports that periodically email you an up-to-date snapshot of a saved search.</p>
+                        </div>
+
+                        <div class="item">
+                          <p>Scheduled reports that periodically email you an up-to-date snapshot of a saved search.</p>
+                        </div>
+
+                        <div class="item">
+                          <p>Scheduled reports that periodically email you an up-to-date snapshot of a saved search.</p>
+                        </div>
+                      </div>
+
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -144,23 +174,79 @@
               <div id="new-features" class="row widget widget-white-bg widget-margin-bottom">
                 <i class="fa fa-times widget-close" aria-hidden="true"></i>
                 <h1>NetBase Pro Features</h1>
-                <img class="widget-feature-img" src="assets/images/feature-icon.png" alt="feature-icon" />
-                <p class="widget-feature-text"> Analyze data across a set of cards that trend post volume and sentiment, surface popular terms, and more.</p>
+
+
+                <div id="featureCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#featureCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#featureCarousel" data-slide-to="1"></li>
+                    <li data-target="#featureCarousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img class="widget-feature-img" src="assets/images/feature-icon.png" alt="feature-icon" />
+                      <p class="widget-feature-text"> Analyze data across a set of cards that trend post volume and sentiment, surface popular terms, and more.</p>
+                    </div>
+
+                    <div class="item">
+                      <img class="widget-feature-img" src="assets/images/feature-icon.png" alt="feature-icon" />
+                      <p class="widget-feature-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ante et nulla vehicula auctor eu nec felis. </p>
+                    </div>
+
+                    <div class="item">
+                      <img class="widget-feature-img" src="assets/images/feature-icon.png" alt="feature-icon" />
+                      <p class="widget-feature-text"> Phasellus tincidunt nisi elementum nulla cursus pulvinar. Nullam venenatis eleifend erat, at sollicitudin mi.</p>
+                    </div>
+                  </div>
+
+
+                </div>
+
                 <a href="#" class="btn widget-btn widget-btn-red widget-btn-dl">Download Guide</a>
               </div>
 
               <div id="use-cases" class="row widget widget-white-bg widget-margin-bottom">
 
                 <h1>NetBase Pro Use Cases</h1>
-
                 <p> Here are a few examples of the many use cases that NetBase Pro supports:</p>
-                <ul>
-                  <li>Perform market research by analyzing how people are talking and what topics they are interested in.</li>
-                  <li>Perform creative ideation by understanding demographics and popular content behind a brand.</li>
-                </ul>
+                <div id="examplesCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#examplesCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#examplesCarousel" data-slide-to="1"></li>
+                    <li data-target="#examplesCarousel" data-slide-to="2"></li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <ul>
+                        <li>Perform market research by analyzing how people are talking and what topics they are interested in.</li>
+                        <li>Perform creative ideation by understanding demographics and popular content behind a brand.</li>
+                      </ul>
+                    </div>
+
+                    <div class="item">
+                      <ul>
+                        <li>Perform market research by analyzing how people are talking and what topics they are interested in.</li>
+                        <li>Perform creative ideation by understanding demographics and popular content behind a brand.</li>
+                      </ul>
+                    </div>
+
+                    <div class="item">
+                      <ul>
+                        <li>Perform market research by analyzing how people are talking and what topics they are interested in.</li>
+                        <li>Perform creative ideation by understanding demographics and popular content behind a brand.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
               </div>
             </div>
-          </div>
 
       </main>
       </div>
@@ -170,10 +256,10 @@
         </div>
 
       </footer>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
   </body>

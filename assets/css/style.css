@@ -1,3 +1,28 @@
+.carousel-inner {
+  height: 280px;
+}
+
+.carousel-indicators li {
+  border-color: #A3A2A2;
+  padding: 0 !important;
+}
+
+.carousel-indicators li.active {
+  background-color: #A3A2A2;
+}
+
+.carousel .item {
+  height: 220px;
+}
+
+#incomingCarousel .carousel-inner {
+  height: 138px;
+}
+
+#incomingCarousel .carousel .item {
+  height: 140px;
+}
+
 body,
 html {
   height: 100%;
@@ -115,11 +140,19 @@ nav .container {
   border-radius: 4px;
 }
 
+.navbar .dropdown-menu li {
+  padding: 5px 0;
+}
+
 .nav > li > a:focus,
 .nav > li > a:hover {
   background-color: transparent;
   color: white;
   border-bottom: 4px solid white;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background-color: transparent;
 }
 
 .icon-bar {
@@ -187,7 +220,7 @@ nav .container {
 }
 
 .widget-feature-img {
-  margin-left: 25px;
+  margin: 0 auto;
 }
 
 .widget-feature-text {
@@ -208,7 +241,7 @@ nav .container {
   font-weight: bold;
 }
 
-.widget-btn-red {
+.widget-btn-red, .widget-btn-red:visited, .widget-btn-red:focus {
   background: #FFFFFF;
   border: 1px solid #C01823;
   color: #C01823;
@@ -288,6 +321,7 @@ nav .container {
   right: 80px;
   border-width: 0;
   outline: none;
+  background-color: transparent;
   color: #A3A2A2;
 }
 

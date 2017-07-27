@@ -1,7 +1,40 @@
-@import './base/mixins'; // * {
+@import './base/mixins';
+// * {
 //   background-color: rgba(0,0,0,.10);
 //   border          : 1px dashed red !important;
 // }
+
+.carousel {
+  &-inner {
+    height: 280px;
+  }
+
+  &-indicators {
+    li {
+      border-color: #A3A2A2;
+      padding: 0 !important;
+    }
+
+    li.active {
+      background-color: #A3A2A2;
+    }
+  }
+
+  .item {
+    height: 220px;
+  }
+}
+
+#incomingCarousel{
+  .carousel {
+    &-inner {
+      height: 138px;
+    }
+    .item {
+      height: 140px;
+    }
+  }
+}
 
 body,
 html {
@@ -120,6 +153,9 @@ nav {
     color: white;
     border-radius: 4px;
   }
+  .dropdown-menu li{
+    padding:5px 0;
+  }
 }
 
 .nav > li > a:focus,
@@ -127,6 +163,10 @@ nav {
   background-color: transparent;
   color: white;
   border-bottom: 4px solid white;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background-color: transparent;
 }
 
 .icon-bar {
@@ -195,7 +235,7 @@ nav {
   }
 
   &-feature-img {
-    margin-left: 25px;
+    margin: 0 auto;
   }
 
   &-feature-text {
@@ -216,7 +256,7 @@ nav {
     font-weight: bold;
   }
 
-  &-btn-red {
+  &-btn-red,&-btn-red:visited,&-btn-red:focus {
     background: #FFFFFF;
     border: 1px solid #C01823;
     color: #C01823;
@@ -300,8 +340,8 @@ nav {
   right: 80px;
   border-width: 0;
   outline: none;
+  background-color: transparent;
   color: #A3A2A2;
-  
 }
 
 .netbasics {
