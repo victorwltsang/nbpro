@@ -1,10 +1,7 @@
-@import './base/mixins';
-// * {
+@import './base/mixins'; // * {
 //   background-color: rgba(0,0,0,.10);
 //   border          : 1px dashed red !important;
 // }
-
-
 
 body,
 html {
@@ -29,11 +26,66 @@ body {
   width: 80%;
 }
 
+.table {
+  &-header {
+    margin: 0;
+  }
+
+  th {
+    color: #A3A2A2;
+    font-size: 14px;
+    font-weight: normal;
+    border-width: 0 !important;
+  }
+
+  tr td {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    border-width: 0 !important;
+    border-bottom: 1px solid #ccc !important;
+  }
+
+  tr th:nth-child(2) {
+    text-align: center;
+
+  }
+
+  tr th:nth-child(3) {
+    text-align: left;
+  }
+
+  tr td:nth-child(1) {
+    width: 40%;
+    text-transform: uppercase;
+  }
+
+  tr td:nth-child(2) {
+    color: #A3A2A2;
+  }
+
+
+  td i {
+    margin: 0 10px;
+  }
+
+  a {
+    color: #A3A2A2;
+    font-weight: bold;
+  }
+}
+
+.scroll-table {
+  height: 250px !important;
+  overflow-y: scroll;
+}
+
 #wrapper {
   min-height: 100%;
 }
 
 nav {
+  margin-bottom: 40px !important;
+
   a {
     color: white;
   }
@@ -244,10 +296,9 @@ nav {
 
 .netbasics {
   img {
-    display:inline-block;
-    margin-bottom:25px;
+    display: inline-block;
+    margin-bottom: 25px;
   }
-
 }
 
 footer {
@@ -275,7 +326,6 @@ footer p {
     }
   }
 }
-
 @media screen and (min-width:730px) {
   .row-flex,
   .row-flex > div[class*='col-'] {

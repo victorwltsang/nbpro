@@ -21,8 +21,61 @@ body {
   width: 80%;
 }
 
+.table-header {
+  margin: 0;
+}
+
+.table th {
+  color: #A3A2A2;
+  font-size: 14px;
+  font-weight: normal;
+  border-width: 0 !important;
+}
+
+.table tr td {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  border-width: 0 !important;
+  border-bottom: 1px solid #ccc !important;
+}
+
+.table tr th:nth-child(2) {
+  text-align: center;
+}
+
+.table tr th:nth-child(3) {
+  text-align: left;
+}
+
+.table tr td:nth-child(1) {
+  width: 40%;
+  text-transform: uppercase;
+}
+
+.table tr td:nth-child(2) {
+  color: #A3A2A2;
+}
+
+.table td i {
+  margin: 0 10px;
+}
+
+.table a {
+  color: #A3A2A2;
+  font-weight: bold;
+}
+
+.scroll-table {
+  height: 250px !important;
+  overflow-y: scroll;
+}
+
 #wrapper {
   min-height: 100%;
+}
+
+nav {
+  margin-bottom: 40px !important;
 }
 
 nav a {
