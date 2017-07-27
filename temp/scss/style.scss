@@ -47,7 +47,6 @@ body {
 
   tr th:nth-child(2) {
     text-align: center;
-
   }
 
   tr th:nth-child(3) {
@@ -62,7 +61,6 @@ body {
   tr td:nth-child(2) {
     color: #A3A2A2;
   }
-
 
   td i {
     margin: 0 10px;
@@ -291,7 +289,19 @@ nav {
     border-radius: 2px;
     height: 50px;
     padding: 10px 20px;
+    position: relative;
   }
+}
+
+.date-picker {
+  position: absolute;
+  top: 15px;
+  z-index: 45;
+  right: 80px;
+  border-width: 0;
+  outline: none;
+  color: #A3A2A2;
+  
 }
 
 .netbasics {
