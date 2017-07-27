@@ -124,11 +124,21 @@ nav .container {
   padding: 5px 0;
 }
 
-.nav > li > a:focus,
-.nav > li > a:hover {
+.navbar .active {
   background-color: transparent;
   color: white;
   border-bottom: 4px solid white;
+}
+
+.nav > li > a:hover {
+  background-color: transparent;
+  color: white;
+  opacity: .85;
+}
+
+.nav > li > a:focus {
+  background-color: transparent;
+  color: white;
 }
 
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
@@ -293,6 +303,7 @@ nav .container {
 }
 
 /*------------------- End Search bar -------------------*/
+/*------------------- Begin Carousel -------------------*/
 .carousel-inner {
   height: 280px;
 }
@@ -318,6 +329,8 @@ nav .container {
   height: 140px;
 }
 
+/*------------------- End Carousel -------------------*/
+/*------------------- Begin Table -------------------*/
 .table-header {
   margin: 0;
 }
@@ -367,6 +380,8 @@ nav .container {
   overflow-y: scroll;
 }
 
+/*------------------- End Table -------------------*/
+/*------------------- Begin Footer -------------------*/
 footer {
   position: relative;
   clear: both;
@@ -385,3 +400,5 @@ footer p {
 .footer-line {
   border-top: 1px solid rgba(67, 67, 69, 0.33);
 }
+
+/*------------------- End Footer -------------------*/

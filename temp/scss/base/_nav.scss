@@ -38,16 +38,29 @@ nav {
     color: white;
     border-radius: 4px;
   }
+
   .dropdown-menu li{
     padding:5px 0;
   }
+
+  .active{
+    background-color: transparent;
+    color: white;
+    border-bottom: 4px solid white;
+  }
 }
 
-.nav > li > a:focus,
+
 .nav > li > a:hover {
   background-color: transparent;
   color: white;
-  border-bottom: 4px solid white;
+  opacity: .85;
+}
+
+.nav > li > a:focus {
+  background-color: transparent;
+  color: white;
+
 }
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
