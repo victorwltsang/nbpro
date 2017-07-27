@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-  $(".nav a").on("click", function() {
-    $(".nav").find(".active").removeClass("active");
+  $(".nb-nav a").on("click", function() {
+    $(".nb-nav").find(".active").removeClass("active");
     $(this).parent().addClass("active");
   });
 
