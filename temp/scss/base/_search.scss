@@ -1,0 +1,30 @@
+/*------------------- Begin Search bar -------------------*/
+
+.search {
+  form {
+    margin-top: 15px;
+  }
+
+  .input-bar {
+    background: #F5F5F5;
+    border: 0 solid #979797;
+    box-shadow: inset 0 3px 5px 0 rgba(0,0,0,0.17);
+    border-radius: 2px;
+    height: 50px;
+    padding: 10px 20px;
+    position: relative;
+  }
+}
+
+.date-picker {
+  position: absolute;
+  top: 15px;
+  z-index: 45;
+  right: 80px;
+  border-width: 0;
+  outline: none;
+  background-color: transparent;
+  color: $darkGrey;
+}
+
+/*------------------- End Search bar -------------------*/

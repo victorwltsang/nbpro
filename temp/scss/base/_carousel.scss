@@ -1,0 +1,32 @@
+
+.carousel {
+  &-inner {
+    height: 280px;
+  }
+
+  &-indicators {
+    li {
+      border-color: $darkGrey;
+      padding: 0 !important;
+    }
+
+    li.active {
+      background-color: $darkGrey;
+    }
+  }
+
+  .item {
+    height: 220px;
+  }
+}
+
+#incomingCarousel{
+  .carousel {
+    &-inner {
+      height: 138px;
+    }
+    .item {
+      height: 140px;
+    }
+  }
+}

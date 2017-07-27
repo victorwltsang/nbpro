@@ -1,0 +1,70 @@
+/*------------------- Begin Nav -------------------*/
+nav {
+  margin-bottom: 40px !important;
+
+  a {
+    color: white;
+  }
+
+  .container {
+    padding: 0;
+  }
+}
+
+.navbar {
+  border-radius: 0 !important;
+  padding-top: 10px;
+
+  &-brand-image {
+    padding-top: 16px;
+    margin-right: 50px;
+  }
+
+  &-red {
+    background: $nbred;
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,0.30);
+  }
+
+  &-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+  }
+  .dropdown-menu li{
+    padding:5px 0;
+  }
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: transparent;
+  color: white;
+  border-bottom: 4px solid white;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    background-color: transparent;
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.navbar-profile-dropdown {
+  margin-top: -8px;
+}
+
+.navbar-profile-dropdown:focus,
+.navbar-profile-dropdown:hover {
+  border-bottom: 0 solid transparent !important;
+}
+
+/*------------------- End Nav -------------------*/

@@ -1,0 +1,123 @@
+/*------------------- Begin Widget -------------------*/
+
+.widget {
+  border: 0 solid #979797;
+  box-shadow: 4px 5px 6px 2px rgba(0, 0, 0, 0.09);
+  border-radius: 2px;
+  padding: 30px;
+  position: relative;
+
+  &-white-bg {
+    background: #FFFFFF;
+  }
+
+  &-margin-bottom {
+    margin-bottom: 25px;
+  }
+
+  &-close {
+    position: absolute;
+    right: 25px;
+    font-size: 18px !important;
+    color: #E0E0E0;
+  }
+
+  &-feature-img {
+    margin: 0 auto;
+  }
+
+  &-feature-text {
+    width: 65% !important;
+    margin: 50px auto;
+    text-align: center !important;
+  }
+
+  &-soon-feature-text {
+    width: 75% !important;
+    margin: 0 auto;
+  }
+
+  &-btn {
+    border-radius: 2px;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  &-btn-red,&-btn-red:visited,&-btn-red:focus {
+    background: #FFFFFF;
+    border: 1px solid $nbred;
+    color: $nbred;
+  }
+
+  &-btn-red:hover {
+    background: $nbred;
+    color: #FFFFFF;
+  }
+
+  &-btn-dl {
+    margin-bottom: 50px;
+  }
+
+  &-btn-search-red {
+    background: $nbred;
+    border: 1px solid $nbred;
+    color: #FFFFFF !important;
+    height: 50px;
+    width: 60px;
+    box-shadow: -3px 0 8px 0 rgba(192,24,35,0.30);
+    border-radius: 2px;
+
+    i {
+      font-size: 20px;
+    }
+  }
+
+  &-btn-search-red:active,
+  &-btn-search-red:focus {
+    outline: none;
+  }
+
+  .btn:focus {
+    outline: none;
+  }
+
+  &-sidebar {
+    text-align: center;
+
+    p {
+      width: 90%;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    ul {
+      padding: 0;
+      width: 75%;
+      font-size: 13px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    li {
+      padding: 5px 0;
+    }
+  }
+}
+
+.netbasics {
+  img {
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width:991px) {
+  .widget {
+    &-margin-right {
+      margin-right: 10px;
+    }
+  }
+}
+
+/*------------------- End Widget -------------------*/
